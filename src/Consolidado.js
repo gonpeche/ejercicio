@@ -1,17 +1,12 @@
 import React, { Component } from 'react';
 export default class Consolidado extends Component {
     
-    // update() {
-    //     let consolidado = localStorage.getItem('consolidado');
-    //     this.setState({ consolidado });
-    // }
-
     content() {
         const { consolidado } = this.props
         const consolidadoParseado = JSON.parse(consolidado)
         const flujo = consolidadoParseado.map( (item, i) => {
             return (
-                <tr key={i}>
+                <tr key={i} >
                     <td>{item.mes}</td>
                     <td>$ {item.compras}</td>
                     <td>$ {item.ventas}</td>

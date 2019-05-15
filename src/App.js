@@ -34,16 +34,24 @@ class App extends React.Component {
     const { consolidado } = this.state
 
     return (
-      <div className="App">
-        <div className="sidebar">
-          <CargaProducto />
-          <Venta update={this.update}/>
-          <Compra update={this.update} />
+      <div>
+        <div className="App">
+          <div className="sidebar">
+            <CargaProducto />
+            <Venta update={this.update}/>
+            <Compra update={this.update} />
+            
+          </div>
+          <div className="consolidado">
+            <Consolidado 
+              consolidado={consolidado ? consolidado : null}
+              />
+          </div>
         </div>
-        <div className="consolidado">
-          <Consolidado 
-            consolidado={consolidado ? consolidado : null}
-          />
+        <div className="notas">
+          <h3>Notas:</h3>
+          <p>Primero cargar un producto, luego cargar una compra y por ultimo realizar una venta. Ninguna operación de venta o compra se va a realizar si el SKU no fue cargado previamente</p>
+          <p>La opcion de movimiento de depositos y costo de deposito no está resuelta</p>
         </div>
       </div>
     );

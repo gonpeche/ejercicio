@@ -1,5 +1,4 @@
 import React from 'react';
-
 class CargaProducto extends React.Component {
     constructor(props) {
         super(props);
@@ -55,7 +54,7 @@ class CargaProducto extends React.Component {
                 width: "300px"
                 }}
             >
-                CARGA PRODUCTO:
+                <b>CARGA PRODUCTO:</b>
                 <form onSubmit={this.handleSubmit}>
                     <div>
                         <div>

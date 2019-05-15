@@ -1,0 +1,256 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main component renderea Ok 1`] = `
+<div
+  className="App"
+>
+  <div
+    className="sidebar"
+  >
+    <div
+      style={
+        Object {
+          "border": "2px solid black",
+          "padding": "10px",
+          "width": "300px",
+        }
+      }
+    >
+      CARGA PRODUCTO:
+      <form
+        onSubmit={[Function]}
+      >
+        <div>
+          <div>
+            <label>
+              Empresa:
+              <input
+                name="empresa"
+                onChange={[Function]}
+                type="text"
+                value=""
+              />
+            </label>
+          </div>
+          <div>
+            <label>
+              Marca:
+              <input
+                name="marca"
+                onChange={[Function]}
+                type="text"
+                value=""
+              />
+            </label>
+          </div>
+          <div>
+            <label>
+              SKU:
+              <input
+                name="SKU"
+                onChange={[Function]}
+                type="number"
+                value=""
+              />
+            </label>
+          </div>
+          <div>
+            <label>
+              Nombre Comercial:
+              <input
+                name="nombreComercial"
+                onChange={[Function]}
+                type="text"
+                value=""
+              />
+            </label>
+          </div>
+          <div>
+            <label>
+              Volumen:
+              <input
+                name="volumen"
+                onChange={[Function]}
+                type="text"
+                value=""
+              />
+            </label>
+          </div>
+          <div>
+            <label>
+              Descripcion:
+              <input
+                name="descripcion"
+                onChange={[Function]}
+                type="text"
+                value=""
+              />
+            </label>
+          </div>
+          <input
+            type="submit"
+            value="Submit"
+          />
+        </div>
+      </form>
+    </div>
+    <div
+      style={
+        Object {
+          "border": "2px solid black",
+          "marginTop": "2px",
+          "padding": "10px",
+          "width": "300px",
+        }
+      }
+    >
+      VENTA:
+      <form
+        onSubmit={[Function]}
+      >
+        <div>
+          <div>
+            <label>
+              SKU:
+              <input
+                name="SKU"
+                onChange={[Function]}
+                type="number"
+                value=""
+              />
+            </label>
+          </div>
+          <div>
+            <label>
+              Cantidad:
+              <input
+                name="cantidad"
+                onChange={[Function]}
+                type="text"
+                value=""
+              />
+            </label>
+          </div>
+          <div>
+            <label>
+              Deposito:
+              <input
+                name="deposito"
+                onChange={[Function]}
+                type="text"
+                value=""
+              />
+            </label>
+          </div>
+          <div>
+            <label>
+              Precio Venta:
+              <input
+                name="ventas"
+                onChange={[Function]}
+                type="number"
+                value=""
+              />
+            </label>
+          </div>
+          <div>
+            <label>
+              Mes:
+              <input
+                name="mes"
+                onChange={[Function]}
+                type="text"
+                value=""
+              />
+            </label>
+          </div>
+          <input
+            type="submit"
+            value="Submit"
+          />
+        </div>
+      </form>
+    </div>
+    <div
+      style={
+        Object {
+          "border": "2px solid black",
+          "marginTop": "2px",
+          "padding": "10px",
+          "width": "300px",
+        }
+      }
+    >
+      COMPRA:
+      <form
+        onSubmit={[Function]}
+      >
+        <div>
+          <div>
+            <label>
+              SKU:
+              <input
+                name="SKU"
+                onChange={[Function]}
+                type="number"
+                value=""
+              />
+            </label>
+          </div>
+          <div>
+            <label>
+              Cantidad:
+              <input
+                name="cantidad"
+                onChange={[Function]}
+                type="text"
+                value=""
+              />
+            </label>
+          </div>
+          <div>
+            <label>
+              Deposito:
+              <input
+                name="deposito"
+                onChange={[Function]}
+                type="text"
+                value=""
+              />
+            </label>
+          </div>
+          <div>
+            <label>
+              Costo Compra:
+              <input
+                name="compras"
+                onChange={[Function]}
+                type="number"
+                value=""
+              />
+            </label>
+          </div>
+          <div>
+            <label>
+              Mes:
+              <input
+                name="mes"
+                onChange={[Function]}
+                type="text"
+                value=""
+              />
+            </label>
+          </div>
+          <input
+            type="submit"
+            value="Submit"
+          />
+        </div>
+      </form>
+    </div>
+  </div>
+  <div
+    className="consolidado"
+  />
+</div>
+`;

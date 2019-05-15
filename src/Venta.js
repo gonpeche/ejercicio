@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { calculoConsolidado } from './utils'
-
 export default class Venta extends Component {
     constructor(props) {
         super(props);
@@ -62,7 +61,7 @@ export default class Venta extends Component {
                 width: "300px"
                 }}
             >
-                VENTA:
+                <b>VENTA</b>
                 <form onSubmit={this.handleSubmit}>
                     <div>
                         <div>

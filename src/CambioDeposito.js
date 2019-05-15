@@ -9,7 +9,7 @@ export default class CambioDeposito extends Component {
             depositoOrigen: '',
             depositoDestino: ''
         };
-    }
+  }
 
     render() {
         return (

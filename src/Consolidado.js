@@ -1,46 +1,46 @@
 import React, { Component } from 'react';
-
 export default class Consolidado extends Component {
     
-    update() {
-        let consolidado = localStorage.getItem('consolidado');
-        this.setState({ consolidado });
-        console.log(JSON.parse(consolidado))
-    }
+    // update() {
+    //     let consolidado = localStorage.getItem('consolidado');
+    //     this.setState({ consolidado });
+    // }
 
     content() {
         const { consolidado } = this.props
         const consolidadoParseado = JSON.parse(consolidado)
-        const data = consolidadoParseado.map( (item, i) => {
+        const flujo = consolidadoParseado.map( (item, i) => {
             return (
                 <tr key={i}>
                     <td>{item.mes}</td>
-                    <td>{item.compras}</td>
-                    <td>{item.ventas}</td>
-                    <td>{item.deposito}</td>
-                    <td>{item.balance}</td>
+                    <td>$ {item.compras}</td>
+                    <td>$ {item.ventas}</td>
+                    <td>$ {item.deposito}</td>
+                    <td>$ {item.balance}</td>
                 </tr>  
             )
         })
 
-        return (
-            <div class="contenido">
-                {/* <button onClick={this.update}>Refrescar</button> */}
-                <table>
-                    <tr>
-                        <th>Mes</th>
-                        <th>Compras</th> 
-                        <th>Ventas</th>
-                        <th>Deposito</th>
-                        <th>Balance</th>
-                    </tr>
-                    {data}
-                </table>
-            </div>
-        )
+        return flujo
     }
     render() {
         const flujoValores = this.props.consolidado
-        return flujoValores ? this.content() : null
+        const data = flujoValores ? this.content() : null
+
+        return (
+            <div class="contenido">
+            <b>FLUJO DE VALORES:</b>
+            <table>
+                <tr>
+                    <th>Mes</th>
+                    <th>Compras</th> 
+                    <th>Ventas</th>
+                    <th>Deposito</th>
+                    <th>Balance</th>
+                </tr>
+                {data}
+            </table>
+        </div>
+        )
     }
 }

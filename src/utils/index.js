@@ -93,7 +93,7 @@ export function init() {
         cantidad: 0,
         tipo: ''
     }]
-
+    
     if(!localStorage.getItem('movimientos')) {
         localStorage.setItem('movimientos', JSON.stringify(movimiento))
     }
